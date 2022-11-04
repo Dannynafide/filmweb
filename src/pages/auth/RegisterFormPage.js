@@ -21,7 +21,7 @@ export default function SignUpPage() {
 
   return (
     <MainTemplate isAppBarSolidBackground>
-      <AuthTemplate title="ZAŁÓŻ KONTO W DWÓCH PROSTYCH KROKACH">
+      <AuthTemplate title="ZAŁÓŻ KONTO W JEDNYM PROSTYM KROKU">
         <form onSubmit={formik.handleSubmit}>
           {/* <MyTextInput label="Name" name="name" type="name" formik={formik} /> */}
 
@@ -44,7 +44,7 @@ export default function SignUpPage() {
           <div style={{marginBottom: '50px'}} />
 
           <ButtonForm
-            filmweb={+true}
+            color="filmweb"
             type="submit"
             disabled={loading || Object.keys(formik.errors).length > 0}
             bold={+true}
