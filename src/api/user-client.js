@@ -1,4 +1,5 @@
 import {doc, setDoc, getDoc, arrayUnion, arrayRemove} from 'firebase/firestore';
+
 import {db} from './_firebase';
 
 export async function getCurrentUserData(user) {
