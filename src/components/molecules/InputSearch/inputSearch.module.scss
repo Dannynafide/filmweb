@@ -1,0 +1,52 @@
+@import 'styles/constants.scss';
+@import 'styles/breakpoints.scss';
+
+.searchInput {
+  position: relative;
+  border-radius: 2px;
+  background-color: rgba(#fff, 0.95);
+  color: $fontColor_primary;
+  height: 70%;
+  width: calc(100%);
+  font-size: $fontSize_default;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchInput__wrappericon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #777;
+
+  .searchInput__icon {
+    position: absolute;
+    left: 10px;
+    pointer-events: none;
+    color: #ffc200;
+    font-size: inherit;
+  }
+
+  .closeSearchBarBtn {
+    position: absolute;
+    background-color: transparent;
+    right: 3px;
+    padding: 5px;
+  }
+}
+
+.searchInput__inputBase {
+  color: inherit;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+
+@media screen and (min-width: $desktopAndUp) {
+  .searchInput {
+    height: 100%;
+  }
+}

@@ -1,0 +1,45 @@
+@import 'styles/constants.scss';
+@import 'styles/breakpoints.scss';
+
+.image {
+  width: 200px;
+  height: 300px;
+}
+
+.wrapper {
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  width: calc(100% - $mobilePadding * 2);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.description {
+  font-size: 16px;
+}
+
+.filmInfo {
+  margin-top: 30px;
+  font-size: 16px;
+}
+.filmInfo_header {
+  color: $fontColor_secondary;
+}
+
+@media screen and (min-width: $tabletAndUp) {
+  .wrapper {
+    width: calc(#{$tabletAndUp} - #{$tabletPadding * 2});
+  }
+}
+
+@media screen and (min-width: $desktopAndUp) {
+  .wrapper {
+    width: calc(#{$desktopAndUp} - #{$desktopPadding * 2});
+  }
+}

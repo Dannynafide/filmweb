@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  height: 52vh;
+}
+
+.errorTitle {
+  font-family: 'PT Sans Narrow';
+  font-weight: 900;
+  font-size: 3.6rem;
+  color: #000;
+  max-width: 95%;
+  line-height: 1.2;
+  vertical-align: bottom;
+  text-indent: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.errorDescription {
+  font-size: 2.2rem;
+  font-family: 'Lato';
+  max-width: 80%;
+  text-align: center;
+  line-height: 2;
+}
+
+.link {
+  color: #976103;
+  text-decoration: none;
+  cursor: pointer;
+}

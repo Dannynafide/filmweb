@@ -1,0 +1,14 @@
+@import 'styles/constants.scss';
+
+.nav {
+  *a {
+    color: inherit;
+    font-size: $fontSize_secondary;
+  }
+  *a:hover {
+    color: $pageColor_primary;
+  }
+  .disabled {
+    text-decoration: line-through;
+  }
+}

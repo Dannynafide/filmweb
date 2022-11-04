@@ -1,0 +1,58 @@
+@import 'styles/constants.scss';
+@import 'styles/breakpoints.scss';
+
+.advertisement {
+  position: relative;
+  text-align: center;
+  position: relative;
+  margin: 50px 0px 50px 0px;
+}
+
+.advertisement__img {
+  width: 100%;
+}
+
+.advertisement__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: white;
+  background-image: linear-gradient(to right, #fa05ff, #3d1ed7);
+  font-weight: 600;
+  box-shadow: 0 0 1.5rem #0000004d;
+
+  .secondString {
+    font-size: 1.3em;
+    padding-left: 10px;
+    font-weight: 900;
+  }
+  width: 70%;
+}
+
+@media screen and (min-width: $tabletAndUp) {
+  .advertisement__img {
+    width: calc(#{$tabletAndUp} - #{$tabletPadding * 2});
+  }
+  .advertisement__btn {
+    width: auto;
+    // clear: both;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: $desktopAndUp) {
+  .advertisement__img {
+    width: calc(#{$desktopAndUp} - #{$desktopPadding * 2});
+  }
+}

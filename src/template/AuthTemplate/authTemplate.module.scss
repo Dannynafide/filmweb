@@ -1,0 +1,90 @@
+@import 'styles/constants.scss';
+@import 'styles/breakpoints.scss';
+
+.wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+  background: #000000
+    url(https://fwcdn.pl/front/assets/posterBackground-repeatable.34b3751e.jpg)
+    top center repeat-y;
+  background-size: 1920px 1080px;
+  object-fit: fill;
+}
+
+.titleHeader {
+  font-family: PT Sans Narrow;
+  font-size: $fontSize_title;
+  color: $fontColor_primary;
+  line-height: 0px;
+  margin-bottom: 30px;
+}
+
+.loginTemplate {
+  width: 100%;
+  padding: 150px $mobilePadding;
+  background-color: white;
+}
+
+.extended {
+  display: none;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 30px #000000c7;
+  background-color: #262626b3;
+
+  text-align: left;
+  padding: 0px 50px;
+  position: relative;
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 50px 0px;
+
+    .title {
+      color: $pageColor_primary;
+      font-size: $fontSize_sectionTitle;
+      font-family: PT Sans Narrow;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 0px;
+    }
+
+    .description {
+      color: $fontColor_light;
+      font-size: $fontSize_default;
+    }
+  }
+}
+
+.loggedParagraph {
+  margin-top: 70px;
+}
+
+@media screen and (min-width: $tabletAndUp) {
+  .wrapper {
+    padding: 120px 0px;
+  }
+
+  .loginTemplate {
+    padding: 50px 30px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: $desktopAndUp) {
+  .loginTemplate {
+    padding: 30px 30px;
+    width: 400px;
+    min-height: 470px;
+  }
+  .extended {
+    display: inline-block;
+    width: 420px;
+    height: 100%;
+  }
+}

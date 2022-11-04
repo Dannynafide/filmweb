@@ -1,0 +1,74 @@
+@import 'styles/constants.scss';
+@import 'styles/mixins.scss';
+
+.dataPreview {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 20px 0px;
+  z-index: inherit;
+}
+
+.dataPreview__link {
+  text-decoration: none;
+  color: $fontColor_light;
+
+  .dataPreview__title {
+    margin: 0;
+    font-size: $fontSize_sectionTitle;
+    text-transform: uppercase;
+    line-height: 1.1;
+    display: inline;
+
+    // hide text after 1 lines
+    @include hideText(1em, 1);
+  }
+}
+
+.dataPreview__details {
+  font-size: $fontSize_secondary;
+  line-height: 1.15;
+  color: $fontColor_secondary;
+  display: flex;
+  gap: 2rem;
+
+  .originalTitle {
+    // hide text after 1 lines
+    @include hideText(1em, 1);
+  }
+
+  .filmTime {
+    white-space: nowrap;
+  }
+}
+
+.dataPreview__communityRatings {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  .communityRatings__icon {
+    color: #ffc200;
+    font-size: 4rem;
+  }
+  .communityRatings__value {
+    font-size: $fontSize_sectionTitle;
+  }
+  .communityRatings__ratingsNumber {
+    display: flex;
+    flex-direction: column;
+    color: $fontColor_secondary;
+    text-transform: lowercase;
+    line-height: 1;
+    font-size: $fontSize_tertiary;
+  }
+}
+.dataPreview__description {
+  margin: 0;
+  padding: 0;
+  color: $fontColor_secondary;
+  font-size: $fontSize_secondary;
+
+  // hide text after 2 lines
+  @include hideText(1.3em, 2);
+}

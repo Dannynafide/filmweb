@@ -1,0 +1,76 @@
+@import 'styles/constants.scss';
+
+.poster {
+  position: relative;
+
+  figure {
+    overflow: hidden;
+    width: $cardWith;
+    height: $cardHeight;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: transparent;
+      object-fit: cover;
+    }
+  }
+}
+
+.posterActive {
+  figure {
+    -webkit-box-shadow: inset 0px 0px 0px 2px #ffc200;
+    -moz-box-shadow: inset 0px 0px 0px 2px #ffc200;
+    box-shadow: inset 0px 0px 0px 2px #ffc200;
+
+    img {
+      z-index: -1;
+    }
+  }
+}
+
+.number {
+  position: absolute;
+  bottom: -0.9375rem;
+  left: -0.75rem;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: -0.375rem;
+  text-align: center;
+  text-shadow: 0 2px 24px rgb(0 0 0 / 56%);
+}
+
+/* Craeted refering to https://codepen.io/kw7oe/details/mPeepv */
+/*Zoom In*/
+.zoomIn img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.zoomIn:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Craeted refering to https://codepen.io/kw7oe/details/mPeepv */
+/*GrayScale*/
+.grayscale img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.grayscale:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}

@@ -1,0 +1,38 @@
+@mixin shadowCard {
+  box-shadow: 0 8px 16px #00000029;
+  transition: background 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    box-shadow 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+$cardWith: 150px;
+$cardHeight: 210px;
+
+// Breakpoints padding
+$mobilePadding: 10px;
+$tabletPadding: 15px;
+$desktopPadding: 20px;
+
+// Page color
+$pageColor_primary: #ffc200;
+
+// Font color
+$fontColor_primary: black;
+$fontColor_secondary: #aaa;
+$fontColor_light: #fefefe;
+
+// Font size
+$fontSize_header: 4.2rem;
+$fontSize_sectionTitle: 3.2rem;
+$fontSize_title: 2.4rem;
+$fontSize_default: 1.6rem;
+$fontSize_secondary: 1.4rem; // dwa rozmiary mniejszy niz $fontSize_default
+$fontSize_tertiary: 1.2rem;
+$fontSize_footer: 1rem;
+
+:export {
+  pageColor_primary: $pageColor_primary;
+
+  fontColor_primary: $fontColor_primary;
+  fontColor_secondary: $fontColor_secondary;
+  fontColor_light: $fontColor_light;
+}

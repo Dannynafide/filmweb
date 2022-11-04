@@ -1,0 +1,108 @@
+@import 'styles/constants.scss';
+@import 'styles/breakpoints.scss';
+
+.userPage {
+  padding: 0px $mobilePadding;
+  padding-bottom: 200px;
+}
+
+.title {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 25px;
+  padding-top: 15px;
+}
+
+.mainSettings__group {
+  padding: 10px 0px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: $fontSize_default;
+}
+
+.title,
+.blockHeader__title {
+  font-family: PT Sans Narrow, Open Sans, sans-serif;
+  font-size: $fontSize_title;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.mainSettings__groupItemHeader {
+  text-transform: initial;
+  letter-spacing: normal;
+  font-weight: 600;
+  font-size: $fontSize_default;
+  line-height: $fontSize_default * 2;
+}
+
+.mainSettings__groupItemStateContent {
+  margin-right: 0.625rem;
+  display: inline-block;
+  font-size: $fontSize_default;
+  line-height: $fontSize_default * 2;
+}
+.mainSettings__form__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.mainSettings__form {
+  padding: 20px 15px;
+}
+
+.mainSettings__form::before {
+  position: absolute;
+  content: '';
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f8f8f8;
+  z-index: -1;
+}
+
+@media screen and (min-width: $tabletAndUp) {
+  .mainSettings__groupItem {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+  }
+
+  .userPage {
+    max-width: calc($tabletAndUp - 2 * $tabletPadding);
+    margin: 0px auto;
+
+    padding-left: $tabletPadding;
+    padding-right: $tabletPadding;
+  }
+  .mainSettings__groupItemStateContent {
+    line-height: $fontSize_default;
+  }
+  .mainSettings__form {
+    margin: 0px auto;
+    max-width: 500px;
+
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (min-width: $desktopAndUp) {
+  .userPage {
+    max-width: calc($desktopAndUp - 2 * $desktopPadding);
+    margin: 0px auto;
+
+    padding-left: $desktopPadding;
+    padding-right: $desktopPadding;
+  }
+  .mainSettings__groupItem {
+    margin-left: 100px;
+  }
+
+  .mainSettings__form {
+    margin-left: 100px;
+    max-width: 500px;
+  }
+}

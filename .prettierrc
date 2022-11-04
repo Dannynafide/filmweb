@@ -1,0 +1,9 @@
+{
+  "bracketSpacing": false,
+  "printWidth": 80,
+  "proseWrap": "always",
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComa": "all",
+  "cssEnable": ["css", "less", "sass"]
+}

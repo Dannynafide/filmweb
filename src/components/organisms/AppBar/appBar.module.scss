@@ -1,0 +1,51 @@
+@import 'styles/constants.scss';
+@import 'styles/breakpoints.scss';
+
+.appBar {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  width: calc(100% - $mobilePadding - $mobilePadding);
+  height: 70px;
+  background-color: transparent;
+  transition: 1s;
+  padding: 0px $mobilePadding;
+  color: $fontColor_light;
+
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    background-color: black;
+  }
+}
+
+.solidBackground {
+  background-color: black;
+}
+.solidBackgroundBox {
+  background-color: black;
+  height: 70px;
+  width: 100%;
+}
+
+@media screen and (min-width: $tabletAndUp) {
+  .appBar {
+    width: calc(100% - $tabletPadding - $tabletPadding);
+    height: 55px;
+    padding: 0px $tabletPadding;
+  }
+  .solidBackgroundBox {
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: $desktopAndUp) {
+  .appBar {
+    height: auto;
+  }
+  .solidBackgroundBox {
+    height: 50px;
+    // or height: 100px;
+  }
+}

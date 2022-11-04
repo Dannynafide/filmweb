@@ -1,0 +1,90 @@
+@import 'styles/constants.scss';
+@import 'styles/breakpoints.scss';
+
+.container {
+  background: #333
+    url('https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')
+    no-repeat center center/cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 0 4rem;
+  color: $fontColor_light;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 90vh;
+    background: linear-gradient(
+      180deg,
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.001) 26.7%,
+      rgba(0, 0, 0, 0.001) 64%,
+      rgb(0, 0, 0) 100%
+    );
+  }
+}
+.mainText,
+.title {
+  font-weight: 200;
+  margin: 0.64rem;
+  z-index: 1;
+}
+
+.mainText {
+  font-size: $fontSize_header;
+}
+
+.title {
+  font-size: $fontSize_title;
+  color: #aaa;
+}
+
+.paragraph {
+  margin: 0.64rem;
+  font-size: $fontSize_default;
+  color: $fontColor_light;
+  z-index: 1;
+}
+
+.link {
+  color: $pageColor_primary;
+  text-decoration: none;
+
+  &:link {
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: $tabletAndUp) {
+  .container {
+    padding: 0 1.6rem;
+  }
+  .mainText {
+    font-size: 7.68rem;
+  }
+}
+
+@media screen and (min-width: $desktopAndUp) {
+  .container {
+    background: #333
+      url('https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg')
+      no-repeat center center/cover;
+  }
+  .mainText {
+    font-size: 7.68rem;
+  }
+}

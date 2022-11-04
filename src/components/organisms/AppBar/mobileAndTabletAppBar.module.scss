@@ -1,0 +1,181 @@
+@import 'styles/constants.scss';
+@import 'styles/breakpoints.scss';
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: $fontSize_default;
+
+  .logo {
+    height: 4rem;
+  }
+
+  .icons {
+    font-size: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.menuOpen {
+  position: absolute;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+
+  .avatar {
+    font-size: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+
+    .userName {
+      font-size: 1.8rem;
+      margin-left: 5px;
+    }
+  }
+
+  .userHeader {
+    width: calc(100% - 2 * $mobilePadding);
+    background: url(https://fwcdn.pl/front/assets/kurtyna.e05289f1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 0px $mobilePadding;
+  }
+  .userHeader__buttons {
+    border-top: 1px solid gray;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding: 15px 0px;
+
+    button {
+      background-color: transparent;
+      color: inherit;
+      border: none;
+      font-size: inherit;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .siteMenuWrapper {
+    font-size: 16px;
+    color: $fontColor_primary;
+
+    .list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .listNested {
+    }
+    .spaceBottom {
+      margin-bottom: 2.4rem;
+    }
+    .lineThrough {
+      text-decoration: line-through;
+      color: #bbb;
+    }
+  }
+}
+
+.item {
+  .item__submenu {
+    border-left: 5px solid $pageColor_primary;
+    background-color: #f8f8f8;
+    padding: 0.8rem 0px;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    overflow-y: hidden;
+
+    .item__sub {
+      list-style-type: none;
+
+      a {
+        transition: color 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        display: flex;
+        align-items: center;
+        height: 2.25rem;
+        padding: 0.8rem 2.4rem 0.8rem 2.5rem;
+        font-size: $fontSize_secondary;
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+  .itemName {
+    padding: 10px $mobilePadding;
+    width: calc(100% - 2 * $mobilePadding);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-size: 3rem;
+    }
+  }
+}
+
+.myFormButton {
+  width: 350px;
+  color: $fontColor_light;
+}
+
+@media screen and (min-width: $tabletAndUp) {
+  .wrapper {
+    .icons {
+      font-size: 4rem;
+    }
+  }
+  .menuOpen {
+    .avatar {
+      font-size: 4rem;
+      padding: 3px 0px;
+      .userName {
+        font-size: $fontSize_default;
+      }
+    }
+    .userHeader {
+      width: calc(100% - 2 * $tabletPadding);
+      padding: 0px $tabletPadding;
+      background: url(https://fwcdn.pl/front/assets/kurtyna.e05289f1.jpg);
+    }
+    .userHeader__buttons {
+      padding: 10px 0px;
+    }
+  }
+  .item {
+    .itemName {
+      padding-left: $tabletPadding;
+      padding-right: $tabletPadding;
+      width: calc(100% - 2 * $tabletPadding);
+    }
+  }
+}

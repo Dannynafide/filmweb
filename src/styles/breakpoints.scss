@@ -1,0 +1,20 @@
+$tabletMin: 768;
+$desktopMin: 1153;
+
+$tabletAndUp: $tabletMin + px;
+$desktopAndUp: $desktopMin + px;
+
+// Default: Phones (0 - 768)
+
+@media screen and (min-width: $tabletAndUp) {
+  // Tablets
+}
+
+@media screen and (min-width: $desktopAndUp) {
+  // Laptop and Desktop
+}
+
+:export {
+  tabletAndUp: $tabletAndUp;
+  desktopAndUp: $desktopAndUp;
+}

@@ -1,0 +1,59 @@
+@import 'styles/constants.scss';
+@import 'styles/breakpoints.scss';
+
+.swiper {
+  position: relative;
+}
+
+.swiper__previousButton,
+.swiper__nextButton {
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  padding: 5px;
+
+  background-color: #ffc200;
+  border: none;
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:disabled {
+    visibility: hidden;
+  }
+}
+.swiper__previousButton {
+  left: 0px;
+}
+
+.swiper__nextButton {
+  right: 0px;
+}
+
+.swiper__slides {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  height: auto;
+
+  &:nth-child(n) {
+    width: $cardWith;
+    background-color: transparent;
+  }
+}
+
+@media screen and (min-width: $tabletAndUp) {
+  .swiper {
+    width: calc(#{$tabletAndUp} - #{$tabletPadding * 2});
+  }
+}
+
+@media screen and (min-width: $desktopAndUp) {
+  .swiper {
+    width: calc(#{$desktopAndUp} - #{$desktopPadding * 2});
+  }
+}

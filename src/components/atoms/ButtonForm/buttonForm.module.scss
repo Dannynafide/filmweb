@@ -1,0 +1,100 @@
+@import 'styles/constants.scss';
+@import 'styles/breakpoints.scss';
+
+.wrapper {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.button {
+  position: relative; // effect TouchRipple
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  font-size: $fontSize_default;
+  padding: 10px 10px;
+  color: #555555;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 10px 0px;
+  white-space: nowrap;
+
+  &:disabled {
+    background-color: #e8e8e8;
+    border-color: #e8e8e8;
+    cursor: default;
+  }
+
+  &:hover {
+    background-color: darken(white, 10%);
+  }
+}
+
+.button__startIcon {
+  padding-left: 45px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.inactive {
+  text-decoration: line-through;
+}
+
+.filmweb {
+  color: white;
+  background-color: $pageColor_primary;
+  border-color: $pageColor_primary;
+
+  &:hover {
+    background-color: darken($pageColor_primary, 5%);
+    border-color: darken($pageColor_primary, 5%);
+  }
+}
+
+.facebook {
+  color: white;
+  background-color: #1a77f2;
+  border-color: #1a77f2;
+
+  &:hover {
+    background-color: darken(#1a77f2, 10%);
+    border-color: darken(#1a77f2, 10%);
+  }
+}
+
+.transparent {
+  color: inherit;
+  background-color: transparent;
+  border-color: transparent;
+
+  padding-left: 38px;
+
+  &:hover {
+    background-color: darken(white, 80%);
+  }
+}
+
+.filmweb,
+.facebook,
+.type_transparent {
+  &:disabled {
+    background-color: #e8e8e8;
+    border-color: #e8e8e8;
+    cursor: default;
+  }
+}
+
+.startIcon {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 7px;
+  transform: translate(0, -50%);
+
+  svg {
+    font-size: 3rem;
+    display: flex;
+  }
+}

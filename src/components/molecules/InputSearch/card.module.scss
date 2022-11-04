@@ -1,0 +1,23 @@
+@import 'styles/constants.scss';
+@import 'styles/breakpoints.scss';
+
+.image {
+  width: 100px;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  border: solid 2px transparent;
+  border-radius: 3px;
+  margin: 12px 10px;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card:hover {
+  border-color: $pageColor_primary;
+}

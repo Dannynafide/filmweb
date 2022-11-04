@@ -1,0 +1,13 @@
+// EN - Hide text after the indicated number of lines
+// PL - Ukryj tekst po wskazanej liczbie linii
+// @include hideText($size, $lines)
+@mixin hideText($height, $lines) {
+  line-height: $height;
+  height: $height * $lines; /* height is 2x line-height, so two lines will display */
+  overflow: hidden; /* prevents extra lines from being visible */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines; /* number of lines to show */
+  line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
