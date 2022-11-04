@@ -36,12 +36,14 @@ export function AuthProvider({children}) {
     authApi
       .getCurrentUser()
       .then((userr) => {
-        setUser({
-          accessToken: userr.accessToken,
-          displayName: userr.displayName,
-          email: userr.email,
-          uid: userr.uid,
-        });
+        if (userr !== null) {
+          setUser({
+            accessToken: userr.accessToken,
+            displayName: userr.displayName,
+            email: userr.email,
+            uid: userr.uid,
+          });
+        }
       })
       .catch((e) => setError(e))
       .finally(() => {
