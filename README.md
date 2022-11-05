@@ -1,91 +1,36 @@
-# Getting Started with Create React App
+# Filmweb
 
-This project was bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app).
+Luźny projekt strony filmweb.pl stworzony w ramach nauki React.js.
 
-## Available Scripts
+Projekt można zobaczyć tutaj:
+[https://hopeful-neumann-feb8ae.netlify.app](https://hopeful-neumann-feb8ae.netlify.app)
 
-In the project directory, you can run:
+### Po co go stworzyłem?
 
-### `npm start`
+Dzięki stworzeniu projektu od podstaw bez korzystania z zewnętrznych kursów,
+chciałem pokazać poziom swojego doświadczenia w tworzeniu stron internetowych.
+Wplatając w ten proces nową bibliotekę, poznałem czym jest Material UI. Szybkie
+i proste narzędzie, które potrafi znacznie przyśpieszyć pracę. Jego moliwości
+nie zostały w pełni wykorzystane z powodu korzystania z preprocesora SCSS. Dwa
+rózne sposoby stylowania w projekcie, czyli JS(Material UI) i CSS(SCSS) kolidują
+z sobą i utrudniają pracę, dlatego z wspomnianej biblioteki korzystałem tylko w
+najbardziej postawowych komponentach.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Co zrobiłem?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Chciałbym napisać wszystko, lecz ogrom pracy jakiej potrzebuje aplikacjia do
+działania jest bardzo duży. Postarałem się ją rozbudować do mozliwości
+przeglądania filmów i seriali, które są wczytywane z bazy danych. Chcąc w
+głównej mierze zająć się Reactem stworzyłem backend w oparciu o firebase. Moja
+aplikacjia umozliwia dodanie do ulubionych filmów/seriali, zmianę proflu
+uzytkownika (nick, e-mail, hasło) i prezentuje działającą wyszukiwrkę.
 
-### `npm test`
+## Użyte technologie
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests)
-for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best
-performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about
-[deployment](https://facebook.github.io/create-react-app/docs/deployment) for
-more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can
-`eject` at any time. This command will remove the single build dependency from
-your project.
-
-Instead, it will copy all the configuration files and the transitive
-dependencies (webpack, Babel, ESLint, etc) right into your project so you have
-full control over them. All of the commands except `eject` will still work, but
-they will point to the copied scripts so you can tweak them. At this point
-you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for
-small and middle deployments, and you shouldn't feel obligated to use this
-feature. However we understand that this tool wouldn't be useful if you couldn't
-customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the
-[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here:
-[https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here:
-[https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here:
-[https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here:
-[https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here:
-[https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here:
-[https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<ul>
+    <li>JavaScript - React</li>
+    <li>CSS - SCSS i Material UI</li>
+    <li>Formik</li>
+    <li>Firebase</li>
+    <li>Context</li>
+</ul>
