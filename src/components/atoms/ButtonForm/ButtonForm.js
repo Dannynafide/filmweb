@@ -55,7 +55,11 @@ export default function ButtonForm(props) {
   );
 
   if (link) {
-    btn = <Link to={link}>{btn}</Link>;
+    btn = (
+      <Link to={link} className={styles.link}>
+        {btn}
+      </Link>
+    );
   }
 
   return <div className={styles.wrapper}>{btn}</div>;

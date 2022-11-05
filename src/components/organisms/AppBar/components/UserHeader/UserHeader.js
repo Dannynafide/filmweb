@@ -11,6 +11,7 @@ import Box from '@mui/material/Box';
 import useAuth from 'context/useAuth';
 import IconBtn from 'components/atoms/ButtonIcon/ButtonIcon';
 import MyFormButton from 'components/atoms/ButtonForm/ButtonForm';
+import {routes} from 'routes';
 import styles from './userHeader.module.scss';
 
 function TabPanel(props) {
@@ -97,7 +98,11 @@ export default function UserHeader() {
         <NotificationsNoneIcon />
       </IconBtn>
 
-      <MyFormButton color="transparent" startIcon={<AccountCircleIcon />}>
+      <MyFormButton
+        link={routes.user}
+        color="transparent"
+        startIcon={<AccountCircleIcon />}
+      >
         <span className={styles.userName}>
           {user.displayName ? user.displayName : user.email}
         </span>
