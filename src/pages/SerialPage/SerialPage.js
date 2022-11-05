@@ -21,7 +21,11 @@ export default function Movie() {
   }, [tvSeries, location.pathname]);
 
   if (!serial) {
-    return <div>Ładowanie...</div>;
+    return (
+      <MainTemplate isAppBarSolidBackground>
+        <div>Ładowanie...</div>
+      </MainTemplate>
+    );
   }
 
   return (

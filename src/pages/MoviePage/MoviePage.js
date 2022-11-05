@@ -21,7 +21,11 @@ export default function Movie() {
   }, [movies, location.pathname]);
 
   if (!movie) {
-    return <div>Ładowanie...</div>;
+    return (
+      <MainTemplate isAppBarSolidBackground>
+        <div>Ładowanie...</div>
+      </MainTemplate>
+    );
   }
 
   return (
