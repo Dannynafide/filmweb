@@ -2,7 +2,7 @@
 
 Luźny projekt strony filmweb.pl stworzony w ramach nauki React.js. </br> Projekt
 można zobaczyć tutaj:
-[https://hopeful-neumann-feb8ae.netlify.app](https://hopeful-neumann-feb8ae.netlify.app)
+[https://dulcet-lamington-5e2872.netlify.app](https://dulcet-lamington-5e2872.netlify.app)
 
 ### Po co go stworzyłem?
 
