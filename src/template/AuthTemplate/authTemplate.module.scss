@@ -19,13 +19,13 @@
   font-family: PT Sans Narrow;
   font-size: $fontSize_title;
   color: $fontColor_primary;
-  line-height: 0px;
+  line-height: 30px;
   margin-bottom: 30px;
 }
 
 .loginTemplate {
   width: 100%;
-  padding: 150px $mobilePadding;
+  padding: 100px $mobilePadding;
   background-color: white;
 }
 
