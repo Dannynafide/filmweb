@@ -10,7 +10,7 @@ import Scroll from './Scroll';
 import SearchList from './SearchList';
 import styles from './inputSearch.module.scss';
 
-// openSearchBar - mona zamienić na fullOpne albo big
+// openSearchBar - mozna zamienić na fullOpne albo big
 function InputSearch({onlyIcon, openSearchBar, setOpenSearchBar}) {
   const [search, setSearch] = useState('');
   const [searchShow, setSearchShow] = useState(false);

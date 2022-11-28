@@ -30,17 +30,42 @@
     background-color: darken(white, 10%);
   }
 }
-
-.button__startIcon {
-  padding-left: 45px;
-}
-
 .bold {
   font-weight: bold;
 }
-
 .inactive {
   text-decoration: line-through;
+}
+.startIcon {
+  padding-left: 45px;
+}
+
+.icon {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 7px;
+  transform: translate(0, -50%);
+
+  svg {
+    font-size: 3rem;
+    display: flex;
+  }
+}
+
+.link {
+  color: inherit;
+}
+
+// ---------- Button colors ----------
+.filmweb,
+.facebook,
+.transparent {
+  &:disabled {
+    background-color: #e8e8e8;
+    border-color: #e8e8e8;
+    cursor: default;
+  }
 }
 
 .filmweb {
@@ -75,31 +100,4 @@
   &:hover {
     background-color: darken(white, 80%);
   }
-}
-
-.filmweb,
-.facebook,
-.type_transparent {
-  &:disabled {
-    background-color: #e8e8e8;
-    border-color: #e8e8e8;
-    cursor: default;
-  }
-}
-
-.startIcon {
-  position: absolute;
-  margin: 0;
-  top: 50%;
-  left: 7px;
-  transform: translate(0, -50%);
-
-  svg {
-    font-size: 3rem;
-    display: flex;
-  }
-}
-
-.link {
-  color: inherit;
 }

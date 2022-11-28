@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 import {IconButton} from '@mui/material';
 
-export default function IconBtn(props) {
+export default function ButtonIcon(props) {
   const {link, children, tabIndex, ...other} = {...props};
 
   const classes = {

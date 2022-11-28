@@ -2,30 +2,30 @@ import StarRateIcon from '@mui/icons-material/StarRate';
 
 import styles from './ribbon.module.scss';
 
-export const ribbonType = {
+export const TYPE = {
   basic: 'basic',
   protruding: 'protruding',
   round: 'round',
 };
 
 export default function Ribbon({type, active, onClick}) {
-  const color = {color: active ? 'white' : 'inherit', fontSize: '20px'};
+  const iconStyle = {color: active ? 'white' : 'inherit', fontSize: '20px'};
 
-  const classs = `
-  ${type === ribbonType.basic && styles.basic}
-  ${type === ribbonType.protruding && styles.protruding}
-  ${type === ribbonType.round && styles.round}
+  const ribbonStyles = `
+  ${type === TYPE.basic && styles.basic}
+  ${type === TYPE.protruding && styles.protruding}
+  ${type === TYPE.round && styles.round}
 `;
 
   return (
     <div
-      className={classs}
+      className={ribbonStyles}
       onClick={onClick}
       onKeyPress={onClick}
       role="button"
       tabIndex="0"
     >
-      <StarRateIcon sx={{color}} />
+      <StarRateIcon sx={{iconStyle}} />
     </div>
   );
 }

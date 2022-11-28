@@ -1,7 +1,7 @@
 @import 'styles/constants.scss';
 @import 'styles/breakpoints.scss';
 
-.button {
+.basic {
   width: 100%;
   background-color: white;
   border: solid 1px rgb(204, 204, 204);
@@ -16,7 +16,7 @@
     color: white;
   }
 
-  &__dark {
+  .dark {
     background-color: black;
     color: white;
 
@@ -28,7 +28,7 @@
 }
 
 @media screen and (min-width: $tabletAndUp) {
-  .button {
+  .basic {
     width: 330px;
     min-width: 330px;
   }
