@@ -4,7 +4,7 @@ import {IconButton} from '@mui/material';
 export default function ButtonIcon(props) {
   const {link, children, tabIndex, ...other} = {...props};
 
-  const classes = {
+  const styles = {
     fontSize: 'inherit',
     padding: '0px',
     margin: '0px',
@@ -23,14 +23,14 @@ export default function ButtonIcon(props) {
   };
 
   let icon = (
-    <IconButton sx={classes} tabIndex={link || tabIndex ? -1 : null} {...other}>
+    <IconButton sx={styles} tabIndex={link || tabIndex ? -1 : null} {...other}>
       {children}
     </IconButton>
   );
 
   if (link) {
     icon = (
-      <Link to={link} style={classes}>
+      <Link to={link} style={styles}>
         {icon}
       </Link>
     );
