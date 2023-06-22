@@ -1,18 +1,18 @@
 import {Link} from 'react-router-dom';
 
 // MaterialUI
-import LoginRoundedIcon from '@mui/icons-material/LoginRounded';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import LoginRoundedIcon from '@mui/icons-material/LoginRounded';
 
 // Imports from my application
-import useAuth from 'context/useAuth';
-import SearchInput from 'components/molecules/InputSearch';
-import MyFormButton from 'components/atoms/ButtonForm/ButtonForm';
-import IconBtn from 'components/atoms/ButtonIcon/ButtonIcon';
-import useScrollPosition from 'hooks/useScrollPosition';
-import {routes} from 'routes';
 import MiniLogo from 'assets/images/logo-icon.png';
 import Logo from 'assets/images/logo.png';
+import MyFormButton from 'components/atoms/ButtonForm/ButtonForm';
+import IconBtn from 'components/atoms/ButtonIcon/ButtonIcon';
+import SearchInput from 'components/molecules/InputSearch';
+import useAuth from 'context/useAuth';
+import useScrollPosition from 'hooks/useScrollPosition';
+import {routes} from 'routes';
 import Nav from './components/Nav/Nav';
 import UserHeader from './components/UserHeader/UserHeader';
 import styles from './desktopAppBar.module.scss';
