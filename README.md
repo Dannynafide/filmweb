@@ -1,39 +1,31 @@
 # Filmweb
 
-Luźny projekt strony filmweb.pl stworzony w ramach nauki React.js. </br> Projekt
-można zobaczyć tutaj:
+## General info
+
+Project created from scratch without online courses, imitating the filmweb.pl
+website. I tried to use the Pixel Perfect technique, reproducing the page as
+accurately as possible. Only the movies and series section was created.
+
+## Technologies
+
+- ReactJS 18.2 & Context & hooks
+- Formik 2.2 & Yup
+- MaterialUI 5.8
+- SCSS
+- API - Firebase 9.10
+
+## Website
+
 [https://dulcet-lamington-5e2872.netlify.app](https://dulcet-lamington-5e2872.netlify.app)
 
-### Po co go stworzyłem?
+## Features
 
-Dzięki stworzeniu projektu od podstaw bez korzystania z zewnętrznych kursów,
-chciałem pokazać poziom swojego doświadczenia w tworzeniu stron internetowych.
-Wplatając w ten proces nową bibliotekę, poznałem czym jest Material UI. Szybkie
-i proste narzędzie, które potrafi znacznie przyśpieszyć pracę. Jego możliwości
-nie zostały w pełni wykorzystane z powodu korzystania z preprocesora SCSS. Dwa
-różne sposoby stylowania w projekcie, czyli JS(Material UI) i CSS(SCSS) kolidują
-z sobą i utrudniają pracę, dlatego z wspomnianej biblioteki korzystałem tylko w
-najbardziej postawowych komponentach.
+- Browse movies and series that are downloaded from the database (firebase)
+- Adding to favorite movies or series
+- Search engine for movies and series
+- User login and registration
+- Changing the user profile (nick, e-mail, password)
 
-### Co zrobiłem?
+## Illustrations
 
-Chciałbym napisać wszystko, lecz ogrom pracy jakiej potrzebuje aplikacja do
-działania jest bardzo duży. Postarałem się ją rozbudować do możliwości
-przeglądania filmów i seriali, które są wczytywane z bazy danych. Chcąc w
-głównej mierze zająć się Reactem, stworzyłem backend w oparciu o firebase. Moja
-aplikacja umożliwia dodanie do ulubionych filmów/seriali, zmianę proflu
-użytkownika (nick, e-mail, hasło) i prezentuje działającą wyszukiwarkę.
-
-## Użyte technologie
-
-<ul>
-    <li>JavaScript - React</li>
-    <li>CSS - SCSS i Material UI</li>
-    <li>Formik</li>
-    <li>Firebase</li>
-    <li>Context</li>
-</ul>
-
-## Podgląd aplikacji
-
-<img src="./app_photo/preview.png" />
+<img alt="Preview website" src="./app_photo/preview.png"/>
